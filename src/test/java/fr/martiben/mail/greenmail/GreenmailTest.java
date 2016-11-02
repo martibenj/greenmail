@@ -74,7 +74,6 @@ public class GreenmailTest
     assertThat(one.getFrom()).isEqualTo(new InternetAddress[] { new InternetAddress(expectedFrom) });
     assertThat(one.getAllRecipients()).isEqualTo(new InternetAddress[] { new InternetAddress(expectedTo) });
     assertThat(one.getSubject()).isEqualTo(expectedSubject);
-    // GreenMailUtil.getBody(one)
 
     MimeMultipart parts = (MimeMultipart) one.getContent();
     assertThat(parts.getCount()).isEqualTo(1);
