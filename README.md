@@ -1,2 +1,2 @@
 # greenmail
-Grenmail Testing Sample
+Greenmail Testing Sample

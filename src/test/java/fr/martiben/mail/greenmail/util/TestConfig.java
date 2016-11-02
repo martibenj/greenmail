@@ -2,7 +2,6 @@ package fr.martiben.mail.greenmail.util;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.ImportResource;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 
 import java.util.Properties;
@@ -11,7 +10,6 @@ import java.util.Properties;
  * @author martinelli-b
  */
 @Configuration
-@ImportResource(value = "classpath:spring/applicationContext.xml")
 public class TestConfig
 {
   // Thoses properties can be set in a props file w/ @PropertySource(value = "classpath:application.properties")
